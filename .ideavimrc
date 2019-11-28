@@ -1,0 +1,104 @@
+
+#nnoremap <up>    <nop>
+#nnoremap <down>  <nop>
+#nnoremap <left>  <nop>
+#nnoremap <right> <nop>
+#inoremap <up>    <nop>
+#inoremap <down>  <nop>
+#inoremap <left>  <nop>
+#inoremap <right> <nop>
+
+
+let mapleader = " "
+
+set incsearch
+set ignorecase
+set smartcase
+
+set ideamarks
+
+" easy system clipboard copy/paste
+noremap <space>y "*y
+noremap <space>Y "*Y
+noremap <space>p "*p
+noremap <space>P "*P
+
+set number
+set relativenumber
+set ts=2
+set autoindent
+set nohlsearch
+set title
+
+set surround
+set commentary
+set multiple-cursors
+
+
+inorema jk <Esc>
+inorema Jk <Esc>
+inorema JK <Esc>
+inorema jK <Esc>
+
+" Code beauty
+nnoremap <leader>oi :action OptimizeImports<CR>
+nnoremap <leader>rf :action ReformatCode<CR>
+vnoremap <leader>rf :action ReformatCode<CR>
+
+" Search
+nnoremap <leader>se :action SearchEverywhere<CR>
+nnoremap <leader>fp :action FindInPath<CR>
+nnoremap <leader>n :action FileStructurePopup<CR> "NERD tree eq.
+
+
+" Navigation
+nnoremap <leader>gd :action GotoDeclaration<CR>
+nnoremap <leader>gs :action GotoSuperMethod<CR>
+nnoremap <leader>gi :action GotoImplementation<CR>
+nnoremap <leader>lc :action JumpToLastChange<CR>
+nnoremap <leader>fu :action FindUsages<CR>
+nnoremap <leader>ne :action GotoNextError<CR>
+
+nnoremap <leader>r :action RenameElement<CR>
+
+nnoremap <leader>si :action ShowIntentionActions<CR>
+
+nnoremap <leader>gt :action GotoAction<CR>
+vnoremap <leader>gt :action GotoAction<CR>
+
+" Utility
+nnoremap <leader>ge :action Generate<CR>
+nnoremap <leader>d :action QuickJavaDoc<CR>
+
+
+
+" Scroll large amounts
+nnoremap gj 15gjzz
+nnoremap gk 15gkzz
+vnoremap gj 15gjzz
+vnoremap gk 15gkzz
+
+
+" Splits
+
+"Create split
+nnoremap <leader>sp :vsp<CR>
+
+nnoremap <leader>l <C-w>l
+nnoremap <leader>k <C-w>k
+nnoremap <leader>j <C-w>j
+nnoremap <leader>h <C-w>h
+
+" Tabs
+
+"Close tab
+"nnoremap <leader>nt :action 
+nnoremap <leader>ct :action VimFileSaveClose<CR>
+nnoremap <C-l> :action NextTab<CR>
+nnoremap <C-h> :action PreviousTab<CR>
+nnoremap <leader>tt :action ReopenClosedTab <CR>
+
+" Git
+
+
+
